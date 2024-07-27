@@ -1,0 +1,54 @@
+.task-list-item {
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  margin: 16px 0;
+  padding: 26px 16px;
+  display: flex;
+  flex-direction: 'row';
+  justify-content: space-between;
+  align-items: center;
+  color: #222222;
+}
+
+.task-list-item div {
+  margin: 0 16px;
+}
+
+.task-list-item div:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.task-title {
+  font-size: 18px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.task-list-item-completed {
+  opacity: 0.7;
+}
+
+.task-list-item-completed .task-title {
+  font-style: italic;
+  text-decoration: line-through;
+}
+
+.task-list-item-progress {
+  color: #222222;
+}
+
+.task-list-item-progress-completed {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.task-list-item-progress-incomplete {
+  font-weight: 600;
+}
+
+.section-separator {
+  width: 100%;
+  border: 1px solid #4f4f4f45;
+  margin: 4px 0;
+}
