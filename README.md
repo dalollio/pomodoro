@@ -1,6 +1,34 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pomodoro App
+
+This is a Pomodoro app to help manage work and break times using the Pomodoro technique. The app is developed with React and TypeScript.
+
+## Project Structure
+
+- `package-lock.json`: npm lock file to ensure consistent installations.
+- `package.json`: npm configuration file specifying the project's dependencies and scripts.
+- `public/`: Directory containing public files, including the main HTML file.
+- `src/`: Directory containing the app's source code.
+- `tsconfig.json`: TypeScript configuration file.
+
+## Prerequisites
+
+Before starting, make sure you have Node.js and npm installed on your machine. You can download Node.js [here](https://nodejs.org/).
+
+## Installation
+
+1. Clone the repository to your local machine:
+    ```bash
+    git clone <REPOSITORY_URL>
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Pomodoro
+    ```
+3. Install the project dependencies:
+    ```bash
+    npm install
+    ```
 
 ## Available Scripts
 
@@ -8,39 +36,39 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
+The page will reload if you make edits.
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
+Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm test`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Launches the test runner in the interactive watch mode.
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Configuration
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Recommended Editor**: [Visual Studio Code](https://code.visualstudio.com/)
+- **Recommended Extensions**:
+  - ESLint
+  - Prettier
 
-## Learn More
+## Contribution
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributions are welcome! Feel free to open issues and pull requests.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
