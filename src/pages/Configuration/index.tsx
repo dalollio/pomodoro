@@ -89,7 +89,7 @@ const Configuration: React.FC = () => {
         </div>
         <div className="config-row">
           <div className="config-item stretch">
-            <label>Interval Timer</label>
+            <label>Interval Timer (sec.)</label>
             <Input
               value={String(configuration?.update_interval || '')}
               handleChange={text =>
@@ -109,7 +109,7 @@ const Configuration: React.FC = () => {
             }}
             className="button"
             style={{ width: '130px' }}>
-            Salvar
+            Save
           </span>
         </div>
       </div>

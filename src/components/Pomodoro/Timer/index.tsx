@@ -25,6 +25,11 @@ const Timer: React.FC<TimerProps> = ({ task, onComplete }) => {
   const [isTimerActive, setIsTimerActive] = React.useState<boolean>(false);
   const timerRef = React.useRef<NodeJS.Timeout | null>(null);
 
+  const ring = () => {
+    const ringSound = new Audio('./assets/phonering.mp3');
+    ringSound.play();
+  }
+
   const setBreakTime = (): timerDuration => {
     setIsBreakTime(true);
     if ((pomodoroCounter + 1) % 4 === 0) {
@@ -58,6 +63,7 @@ const Timer: React.FC<TimerProps> = ({ task, onComplete }) => {
 
   const finishTimer = () => {
     stopTimer();
+    ring();
     if (isBreakTime) {
       handlerBreakFinish();
     } else {
@@ -78,13 +84,16 @@ const Timer: React.FC<TimerProps> = ({ task, onComplete }) => {
   };
 
   React.useEffect(() => {
-    if (timeLeft % 30 === 0 || timeLeft < 30) {
+    if (
+      timeLeft % (Number(configs.update_interval) || 30) === 0 ||
+      timeLeft < 30
+    ) {
       setCustomStatus(
         `${
           isBreakTime
-            ? configs.break_emoji || 'Break'
+            ? configs.break_message || 'Break'
             : configs.working_message || 'Focused'
-        } | ${formatTime(timeLeft, '`', '``')}`,
+        } | ${formatTime(timeLeft, `'`, `''`)}`,
         isBreakTime
           ? configs.break_emoji || '⏲️'
           : configs.working_emoji || '🔥',
