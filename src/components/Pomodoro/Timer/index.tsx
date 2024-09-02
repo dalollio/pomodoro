@@ -27,6 +27,7 @@ const Timer: React.FC<TimerProps> = ({ task, onComplete }) => {
 
   const ring = () => {
     const ringSound = new Audio('./assets/phonering.mp3');
+    ringSound.volume = 0.05;
     ringSound.play();
   }
 
